@@ -1,0 +1,9 @@
+{
+  "title": "Home",
+  "content": "intro.md",
+  "gallery": [{
+    "title": "Today I Learned",
+    "copy": "Bite-sized wisdoms",
+    "image": "../images/gallery/react-context.jpg"
+  }]
+}
