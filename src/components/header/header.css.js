@@ -5,6 +5,8 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 4rem;
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+  font-family: 'Josefin Sans', sans-serif;
 
   a {
     color: #757575;

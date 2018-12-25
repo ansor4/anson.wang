@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   siteTitle: 'Anson Wang',
-  siteTitleShort: 'AWang',
+  siteTitleShort: 'Anson Wang',
   siteDescription: 'NYC based human',
   siteUrl: 'https://anson.wang',
   themeColor: '#000',
