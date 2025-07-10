@@ -4,8 +4,8 @@ const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export function Intro() {
   return (
-    <section className={cn(space_grotesk.className, "flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12")}>
-      <section className="flex-col md:flex-col flex items-left md:justify-between mt-16 mb-16 md:mb-12">
+    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
+      <section className={cn(space_grotesk.className, "flex-col md:flex-col flex items-left md:justify-between mt-16 mb-16 md:mb-12")}>
         <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
           Hi ya! 👋
         </h1>
