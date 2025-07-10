@@ -1,22 +1,15 @@
-import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk, Instrument_Sans } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 const instrument_sans = Instrument_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `You've reached Anson Wang`,
   description: `Leave a message at the beep`,
-  // openGraph: {
-  // images: [HOME_OG_IMAGE_URL],
-  // },
 };
 
 export default function RootLayout({

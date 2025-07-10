@@ -1,4 +1,4 @@
-import { Inter, Space_Grotesk, Instrument_Sans } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import cn from "classnames";
 const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
