@@ -6,6 +6,10 @@ import { join } from "path";
 const postsDirectory = join(process.cwd(), "_posts");
 
 export function getPostSlugs() {
+  if (!fs.existsSync(postsDirectory)) {
+    return [];
+  }
+
   return fs.readdirSync(postsDirectory);
 }
 
