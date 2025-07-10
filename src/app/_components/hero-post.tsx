@@ -16,7 +16,7 @@ export function HeroPost() {
         <div>
           <p className="text-lg leading-relaxed mb-4">
             But you can check out my <Link href="https://www.github.com/ansor4" className="text-blue-500 hover:text-blue-600">github</Link>.
-            I also wrote a <Link href="https://artsy.github.io/blog/2018/08/24/How-to-debug-jest-tests/" className="text-blue-500 hover:text-blue-600">blog post</Link> for Artsy awhile ago.
+            I also wrote a <Link href="https://artsy.github.io/blog/2018/08/24/How-to-debug-jest-tests/" className="text-blue-500 hover:text-blue-600">blog post</Link> for Artsy a while ago.
           </p>
         </div>
       </div>
