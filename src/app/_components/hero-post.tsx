@@ -1,51 +1,30 @@
-import Avatar from "@/app/_components/avatar";
 import CoverImage from "@/app/_components/cover-image";
-import { type Author } from "@/interfaces/author";
 import Link from "next/link";
-import DateFormatter from "./date-formatter";
 
-type Props = {
-  title: string;
-  coverImage: string;
-  excerpt: string;
-  slug: string;
-  links?: { [key: string]: string };
-};
-
-export function HeroPost({
-  title,
-  coverImage,
-  excerpt,
-  slug,
-  links,
-}: Props) {
+export function HeroPost() {
   return (
     <section>
       <div className="mb-8 md:mb-16">
-        <CoverImage title={title} src={coverImage} slug={slug} />
+        <CoverImage title="A picture I took of Sossusvlei in 2023, an apt symbol for my online presence" src={"/assets/blog/1-hero-post/cover.jpg"} />
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
           <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
-            {title}
+            I don't got much here...
           </h3>
         </div>
         <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          {links?.github && (
-            <div className="max-w-2xl mx-auto">
-              <Link href={links?.github} className="text-blue-500 hover:text-blue-600">
-                Github
-              </Link>
-            </div>
-          )}
-          {links?.blog_post && (
-            <div className="max-w-2xl mx-auto">
-              <Link href={links?.blog_post} className="text-blue-500 hover:text-blue-600">
-                Blog Post
-              </Link>
-            </div>
-          )}
+          <p className="text-lg leading-relaxed mb-4">But you can check out my github. I also wrote a blog post for Artsy awhile ago.</p>
+          <div className="max-w-2xl mx-auto">
+            <Link href="https://www.github.com/ansor4" className="text-blue-500 hover:text-blue-600">
+              Github
+            </Link>
+          </div>
+          <div className="max-w-2xl mx-auto">
+            <Link href="https://artsy.github.io/blog/2018/08/24/How-to-debug-jest-tests/" className="text-blue-500 hover:text-blue-600">
+              Blog Post
+            </Link>
+          </div>
         </div>
       </div>
     </section>
