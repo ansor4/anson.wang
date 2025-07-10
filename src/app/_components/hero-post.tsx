@@ -5,7 +5,7 @@ export function HeroPost() {
   return (
     <section>
       <div className="mb-8 md:mb-16">
-        <CoverImage title="A picture I took of Sossusvlei in 2023, an apt symbol for my online presence" src={"/assets/blog/1-hero-post/cover.jpg"} />
+        <CoverImage title="A picture I took of Sossusvlei in 2023, an apt symbol for my online presence" src={"/assets/blog/hero-post/cover.jpg"} />
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
